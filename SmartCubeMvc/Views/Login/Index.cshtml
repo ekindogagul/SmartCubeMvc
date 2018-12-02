@@ -1,0 +1,36 @@
+﻿<!--Menu Start-->
+
+<nav id="menu">
+    <ul class="links">
+        <li><a href="~/Views/Home/Index.cshtml">Home</a></li>
+        <li><a href="~/Views/Home/AboutUs.cshtml">About Us</a></li>
+        <li><a href="~/Views/Home/Product.cshtml">Product</a></li>
+    </ul>
+    <ul class="actions vertical">
+        <li><a href="#" class="button fit">Login</a></li>
+        <li><a href="#" class="button fit">Signup</a></li>
+    </ul>
+</nav>
+
+
+<!--Menu End-->
+<html>
+<body>
+    <div class="wrapper">
+        <form class="form-signin" action="/Login/User" method="post">
+            <h2 class="form-signin-heading">Please login</h2>
+            <br />
+            <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+            <br />
+            <input type="password" class="form-control" name="password" placeholder="Password" required="" />
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            <label class="checkbox">@ViewData["message"]</label>
+            <label class="checkbox">
+                Do not have an account? <a href="/Signup">Sign up</a>
+            </label>
+        </form>
+    </div>
+
+</body>
+</html>

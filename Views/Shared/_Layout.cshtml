@@ -1,0 +1,79 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="~/Content/assets/css/main.css" />
+    <link href="~/Content/assets/css/font-awesome.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    
+   <!--Header Start-->
+    <header id="header">
+        <nav class="left">
+            <a href="#menu" id="menu_click"><span>Menu</span></a>
+        </nav>
+        <a href="~/Views/Home/Index.cshtml" class="logo">SmartCube</a>
+        <nav class="right">
+            <a href="#" class="button alt" onclick="location.href='http://localhost:15598/Login/Index';" value="Go to Login">Log in</a>
+            <a href="#" class="button alt" onclick="location.href='http://localhost:15598/Signup/Index';" value="Go to Signup">Sign up</a>
+
+        </nav>
+    </header>
+
+    
+
+    <!--Header End-->
+    <!--Menu Start-->
+    <nav id="menu">
+        <ul class="links">
+
+            <li><a href="~/Views/Home/Index.cshtml">Home</a></li>
+            <li><a href="~/Views/Home/AboutUs.cshtml">AboutUs</a></li>
+            <li><a href="~/Views/Home/Product.cshtml">Product</a></li>
+            <li><a href="~/Views/Home/Contact.cshtml">Contact</a></li>
+            </ul>
+        
+        <ul class="actions vertical">
+            <li><a href="#" class="button fit">Login</a></li>
+            <li><a href="#" class="button alt">Signup</a></li>
+        </ul>
+    </nav>
+
+
+    <!--Menu End-->
+   
+     @RenderBody()
+    
+
+    <!--Footer Start-->
+    <footer id="footer">
+        <div class="inner">
+            <h2>Get In Touch</h2>
+            <ul class="actions">
+                <li><span class="icon fa-phone"></span> <a href="#">(534) 398-0576</a></li>
+                <li><span class="icon fa-envelope"></span> <a href="#">Support@smartcube.com</a></li>
+                <li><span class="icon fa-map-marker"></span> Besiktas, ISTANBUL, TURKEY 34387</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; 
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+
+</body>
+</html>

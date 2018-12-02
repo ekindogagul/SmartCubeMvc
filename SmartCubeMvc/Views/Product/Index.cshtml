@@ -1,0 +1,20 @@
+﻿@model SmartCubeMvc.Models.ProductModels.ProductIndexViewModel
+    
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <!--veritabanindan cekilen tum urunleri ekrana yazdirma-->
+        @foreach (var product in Model.Products)
+        {
+            @product.ProductName
+            <br/>
+        }
+    </div>
+</body>
+</html>
